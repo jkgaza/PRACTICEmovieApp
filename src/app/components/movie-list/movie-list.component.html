@@ -1,0 +1,17 @@
+<div class="row">
+    
+        <div class="card col-md-4 col-sm-6 col-xs-12" *ngFor="let m of movies">
+            <div class="card-body">
+              <h4 class="card-title">{{ m.Title }}</h4>
+              <h5>{{ m.Year }}</h5>
+              <img class = "card-img-top" [src]="m.Poster" alt="m.Poster" class="img img-thumbnail" />
+            </div>
+          </div>
+    
+</div>
+
+
+<!-- for reference, when wanting to display only a single item in an array -->
+<!-- <h4>{{ movies[0].Title }}</h4>
+<h5>{{ movies[0].Year }}</h5>
+<img [src]="movies[0].Poster" alt="movies[0].Poster" class="img img-thumbnail"> -->
